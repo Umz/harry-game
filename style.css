@@ -1,0 +1,153 @@
+body {
+    background: #ffb6b1;
+}
+
+.colours {
+    display: block;
+    height: 3%;
+    width: 500px;
+    position: fixed;
+    right: 5%;
+    top: 10%;
+    z-index: 100;
+    text-align: right;
+   
+}
+
+.box {
+    display: inline-block;
+    height: 100%;
+    width: 30px;
+    margin-right: 2%;
+    border: 1px solid black;
+   
+}
+
+.lastBox {
+    margin-right: 30%;
+}
+
+.col1 {
+    background-color:#803e39;
+}
+
+.col2 {
+    background-color:#af5852;
+}
+
+.col3 {
+    background-color:#ce7973;
+}
+
+.col4 {
+    background-color:#dd8d88;
+}
+
+.col5 {
+    background-color:#f6b2a5;
+}
+
+.corpo {
+    display: block;
+    height: 500px;
+    width: 500px;
+    position: fixed;
+    right: 15%;
+    top: 15%;
+    z-index: -1;
+}
+
+.corpo-reset {
+    position: fixed;
+    right: 20%;
+    bottom: 5%;
+    height: 50px;
+    width: 70px;
+
+}
+
+
+.corpo-undo {
+    position: fixed;
+    right: 35%;
+    bottom: 5%;
+    height: 50px;
+    width: 70px;
+}
+
+.clothes {
+    
+    display: block;
+    width: 30%;
+    margin: 5% 10%;
+}
+
+.cloth-icon {
+    width: 300px;
+    height: 300px;
+}
+
+.main-branding {
+    position: fixed;
+    right: 5%;
+    top: 1%; 
+    font-size: 72px;
+    font-weight: 900;
+    color: white;
+}
+
+.main-branding p {
+    margin: 100px 0;
+}
+
+
+.empty {
+    cursor: pointer;
+}
+
+.hovered {
+    background: #f4f4f4;
+}
+
+img {
+    height: 500px;
+}
+
+.footer {
+    background: #fdaaa4;
+    height: 35px;
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+}
+
+.donate {
+    height: 45px;
+    width: 50px;
+}
+
+@media only screen and (max-width: 450px) {
+    
+    .colours {
+        right: -5%;
+    }
+
+    .clothes {
+        margin: 2% 2%;
+    }
+
+    .cloth-icon {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .corpo {
+
+        height: 500px;
+        width: 500px;
+        right: -10%;
+    }
+
+}

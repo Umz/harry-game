@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   
+
+    <link rel="stylesheet" href="style.css">
+    <title>NKAQUIRK</title>
+</head>
+
+<body>
+
+    <style>
+        .test {
+            position: absolute;
+            left: 0;
+            width: 100%;
+        }
+    </style>
+
+<!-- change body colour-->
+    <div class="colours">
+        <div class="box col1" onclick="changeBody('images/body/body1.png')"></div>
+        <div class="box col2" onclick="changeBody('images/body/body2.png')"></div>
+        <div class="box col3" onclick="changeBody('images/body/body3.png')"></div>
+        <div class="box col4" onclick="changeBody('images/body/body4.png')"></div>
+        <div class="box col5 lastBox" onclick="changeBody('images/body/body5.png')"></div>
+    </div>
+    
+
+    <!--Bodies-->
+    <div class="corpo">
+
+        <img id="cmain" class='test' src="images/body/body1.png" alt="" />
+        <img id='c0' class='test' src="" alt="" />
+        <img id='c1' class='test' src="" alt="" />
+        <img id='c2' class='test' src="" alt="" />
+        <img id='c3' class='test' src="" alt="" />
+        <img id='c4' class='test' src="" alt="" />
+
+    </div>
+
+    <!--Buttons-->
+    <input  class = "corpo-reset"  onclick="reset()" type="image"  alt="RESET" src="images/buttons/reset.png">
+    <input  class = "corpo-undo"  onclick="undo()" type="image"  alt="RESET" src="images/buttons/undo.png">
+
+    
+
+    <div class="clothes" draggable="true">
+
+        <!-- Hats-->
+        <img class='cloth-icon' src="images/hairHats/hat1.png" alt="" onclick="changeClothes('c0', 'images/hairHats/hat1.png')" />
+        <img class='cloth-icon' src="images/hairHats/hat2.png" alt="" onclick="changeClothes('c0', 'images/hairHats/hat2.png')" />
+        <img class='cloth-icon' src="images/hairHats/hat3.png" alt="" onclick="changeClothes('c0', 'images/hairHats/hat3.png')" />
+        <!--Hairs-->
+        
+        <div>
+            <img class='cloth-icon' src="images/hairHats/hair1.png" alt="" onclick="changeClothes('c0', 'images/hairHats/hair1.png ')" />
+            <img class='cloth-icon' src="images/hairHats/hair2.png" alt="" onclick="changeClothes('c3', 'images/hairHats/hair2.png ')" />
+            <img class='cloth-icon' src="images/hairHats/hair3.png" alt="" onclick="changeClothes('c3', 'images/hairHats/hair3.png ')" />
+            <img class='cloth-icon' src="images/hairHats/hair4.png" alt="" onclick="changeClothes('c3', 'images/hairHats/hair4.png ')" />
+            <img class='cloth-icon' src="images/hairHats/hair5.png" alt="" onclick="changeClothes('c3', 'images/hairHats/hair5.png ')" />
+            <img class='cloth-icon' src="images/hairHats/hair6.png" alt="" onclick="changeClothes('c3', 'images/hairHats/hair6.png ')" />
+
+        </div>
+        
+        
+        <!--Tops-->
+        <div>
+            <img class='cloth-icon' src="images/tops/top1.png" alt="" onclick="changeClothes('c1', 'images/tops/top1.png')" />
+            <img class='cloth-icon' src="images/tops/top2.png" alt="" onclick="changeClothes('c1', 'images/tops/top2.png')" />
+            <img class='cloth-icon' src="images/tops/top3.png" alt="" onclick="changeClothes('c1', 'images/tops/top3.png')" />
+            <img class='cloth-icon' src="images/tops/top4.png" alt="" onclick="changeClothes('c1', 'images/tops/top4.png')" />
+        </div>
+
+        <!--Trouses-->
+        <div>
+            <img class='cloth-icon' src="images/legs/legs1.png" alt="" onclick="changeClothes('c2', 'images/legs/legs1.png')" />
+            <img class='cloth-icon' src="images/legs/legs2.png" alt="" onclick="changeClothes('c2', 'images/legs/legs2.png')" />
+            <img class='cloth-icon' src="images/legs/legs3.png" alt="" onclick="changeClothes('c2', 'images/legs/legs3.png')" />
+        </div>
+
+        <!--Shoes-->
+
+        <div>
+                <img class='cloth-icon' src="images/shoes/shoes1.png" alt="" onclick="changeClothes('c4', 'images/shoes/shoes1.png')" />
+                <img class='cloth-icon' src="images/shoes/shoes2.png" alt="" onclick="changeClothes('c4', 'images/shoes/shoes2.png')" />
+                <img class='cloth-icon' src="images/shoes/shoes3.png" alt="" onclick="changeClothes('c4', 'images/shoes/shoes3.png')" />
+                <img class='cloth-icon' src="images/shoes/shoes4.png" alt="" onclick="changeClothes('c4', 'images/shoes/shoes4.png')" />
+        </div>
+
+        <!--Pants-->
+
+        <div>
+                <img class='cloth-icon' src="images/pants/pants1.png" alt="" onclick="changeClothes('c2', 'images/pants/pants1.png')" />
+                <img class='cloth-icon' src="images/pants/pants2.png" alt="" onclick="changeClothes('c2', 'images/pants/pants2.png')" />
+
+        </div>
+
+    </div>
+
+    <div class='main-branding '>
+        <p>N</p>
+        <p>K</p>
+        <p>A</p>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <a href="https://www.paypal.me/nkaquirkdev?locale.x=en_GB" target="_blank">
+            <img  class= "donate" src="images/buttons/donate.png" alt="Donate!"></a>
+            <p>Gimme money!</p>
+
+           </div>
+      </footer>
+
+    <script src="main.js"></script>
+    
+    <script src="https://kit.fontawesome.com/78b204e6a3.js"></script>
+ 
+
+</body>
+
+</html>
